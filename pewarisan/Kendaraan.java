@@ -1,8 +1,20 @@
-package Pewarisan;
+package pewarisan;
 
-public class Main {
-    public static void main(String[] args) {
-        Mobil mobilAvanza = new Mobil("Toyota", "Avanza",2024,4, "Bensin" );
-        mobilAvanza.tampilkanInfoMobil();
+public class Kendaraan {
+    private String merek;
+    private String model;
+    private int tahunProduksi;
+
+    public Kendaraan(String merek, String model, int tahunProduksil) {
+        this.merek = merek;
+        this.model = model;
+        this.tahunProduksi = tahunProduksil;
+    }
+
+    public void tampilkanInfo() {
+        System.out.println("Merek: " + merek);
+        System.out.println("Model: " + model);
+        System.out.println("Tahun Produksi: " + tahunProduksi);
+
     }
 }

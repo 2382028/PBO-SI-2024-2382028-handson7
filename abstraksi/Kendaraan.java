@@ -3,7 +3,7 @@ package abstraksi;
 public abstract class Kendaraan {
     String warna;
 
-    public Kendaraan(final String warna){
+    public Kendaraan(){
         this.warna = warna;
     }
 
@@ -15,5 +15,5 @@ public abstract class Kendaraan {
         System.out.println("Warna : " + warna);
     }
 
-    protected abstract void bergerak();
+    public abstract void bergerak();
 }
